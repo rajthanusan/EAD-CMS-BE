@@ -23,6 +23,8 @@ app.use(cors());
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/courses', require('./routes/courseRoutes'));
 app.use('/api/enroll', require('./routes/enrollmentRoutes'));
+app.use('/api/students', require('./routes/studentRoutes'));
+app.use('/api/results', require('./routes/resultRoutes')); 
 
 
 app.get('/', (req, res) => {
